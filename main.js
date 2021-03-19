@@ -17,12 +17,24 @@ Github: https://github.com/txthinking/brook
 Document(官方文檔): https://txthinking.github.io/brook/
 
 保持 友好 禮貌 風度 互相幫助
-    `;
+`;
         }
         if(s == '' && !m.text){
             return;
         }
-        if(m.text.indexOf('brook_community_bot') != -1){
+        if(s == '' && m.text.indexOf('brook_community_bot') != -1){
+            if(m.text.indexOf('Welcome') != -1 || m.text.indexOf('歡迎') != -1 || m.text.indexOf('欢迎') != -1){
+                s = `
+Brook is a free and open source software based on the GPLv3 agreement
+Brook是一個基於GPLv3協議的免費開源軟件.
+
+Github: https://github.com/txthinking/brook
+
+Document(官方文檔): https://txthinking.github.io/brook/
+
+保持 友好 禮貌 風度 互相幫助
+`;
+            }
             if(m.text.indexOf('Document') != -1 || m.text.indexOf('文档') != -1 || m.text.indexOf('文檔') != -1){
                 s = "https://txthinking.github.io/brook/";
             }
