@@ -3,6 +3,7 @@ import {TelegramBot, UpdateType} from "https://deno.land/x/telegram_bot_api/mod.
 var bot = new TelegramBot(Deno.env.get('TOKEN'));
 
 bot.on(UpdateType.Message, async ({ message: m }) => {
+    try{
     console.log(m);
     var s = "";
     if(m.new_chat_participant || m.new_chat_member){
@@ -34,6 +35,9 @@ Document(官方文檔): https://txthinking.github.io/brook/
         if(m.text.indexOf('community') != -1 || m.text.indexOf('論壇') != -1 || m.text.indexOf('论坛') != -1){
             s = "https://github.com/txthinking/brook/discussions";
         }
+    }
+    }catch(e){
+        s = e.message;
     }
     await bot.sendMessage({
         chat_id: m.chat.id,
