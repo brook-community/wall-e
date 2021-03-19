@@ -4,7 +4,6 @@ var bot = new TelegramBot(Deno.env.get('TOKEN'));
 
 bot.on(UpdateType.Message, async ({ message: m }) => {
     try{
-        console.log(m);
         var s = "";
         if(m.new_chat_participant || m.new_chat_member){
             console.log("hello");
