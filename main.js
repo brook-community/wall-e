@@ -3,6 +3,7 @@ import {TelegramBot, UpdateType} from "https://deno.land/x/telegram_bot_api/mod.
 var bot = new TelegramBot(Deno.env.get('TOKEN'));
 
 bot.on(UpdateType.Message, async ({ message: m }) => {
+    console.log(m);
     var s = "hey";
     await bot.sendMessage({
         chat_id: m.chat.id,
