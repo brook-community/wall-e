@@ -8,7 +8,7 @@ bot.on(UpdateType.Message, async ({ message: m }) => {
         if(m.new_chat_participant || m.new_chat_member){
             console.log("hello");
             s = `
-Brook is a free and open source software based on the GPLv3 agreement
+Brook is a free and open source software based on the GPLv3 license
 Brook是一個基於GPLv3協議的免費開源軟件.
 
 Github:
@@ -26,7 +26,7 @@ https://txthinking.github.io/brook/
         if(s == '' && m.text.indexOf('brook_community_bot') != -1){
             if(m.text.indexOf('Welcome') != -1 || m.text.indexOf('歡迎') != -1 || m.text.indexOf('欢迎') != -1){
                 s = `
-Brook is a free and open source software based on the GPLv3 agreement
+Brook is a free and open source software based on the GPLv3 license
 Brook是一個基於GPLv3協議的免費開源軟件.
 
 Github:
