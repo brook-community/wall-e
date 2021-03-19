@@ -12,9 +12,11 @@ bot.on(UpdateType.Message, async ({ message: m }) => {
 Brook is a free and open source software based on the GPLv3 agreement
 Brook是一個基於GPLv3協議的免費開源軟件.
 
-Github: https://github.com/txthinking/brook
+Github:
+https://github.com/txthinking/brook
 
-Document(官方文檔): https://txthinking.github.io/brook/
+Document(官方文檔):
+https://txthinking.github.io/brook/
 
 保持 友好 禮貌 風度 互相幫助
 `;
@@ -28,9 +30,11 @@ Document(官方文檔): https://txthinking.github.io/brook/
 Brook is a free and open source software based on the GPLv3 agreement
 Brook是一個基於GPLv3協議的免費開源軟件.
 
-Github: https://github.com/txthinking/brook
+Github:
+https://github.com/txthinking/brook
 
-Document(官方文檔): https://txthinking.github.io/brook/
+Document(官方文檔):
+https://txthinking.github.io/brook/
 
 保持 友好 禮貌 風度 互相幫助
 `;
@@ -50,9 +54,15 @@ Document(官方文檔): https://txthinking.github.io/brook/
             if(m.text.indexOf('Community') != -1 || m.text.indexOf('論壇') != -1 || m.text.indexOf('论坛') != -1){
                 s = "https://github.com/txthinking/brook/discussions";
             }
+            if(m.text.indexOf('Who are you') != -1){
+                s = "I am here: https://github.com/brook-community/wall-e You can help me become better";
+            }
+            if(m.text.indexOf('你是誰') != -1 || m.text.indexOf('你是谁') != -1){
+                s = "我在這裡: https://github.com/brook-community/wall-e 你可以幫助我變得更好";
+            }
         }
     }catch(e){
-        s = e.message;
+        s = e.message + '. Please help me. 請幫助我: https://github.com/brook-community/wall-e';
     }
     if(s == ''){
         return;
