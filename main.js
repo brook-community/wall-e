@@ -3,8 +3,10 @@ import {TelegramBot, UpdateType} from "https://deno.land/x/telegram_bot_api/mod.
 var bot = new TelegramBot(Deno.env.get('TOKEN'));
 
 bot.on(UpdateType.Message, async ({ message: m }) => {
+    console.log(m);
     var s = "";
     if(m.new_chat_participant || m.new_chat_member){
+        console.log("hello");
         s = `
 Brook is a free and open source software based on the GPLv3 agreement
 Brook是一個基於GPLv3協議的免費開源軟件.
@@ -16,7 +18,7 @@ Document(官方文檔): https://txthinking.github.io/brook/
 保持 友好 禮貌 風度 互相幫助
 `;
     }
-    if(m.text.startsWith('@brook_community_bot')){
+    if(m.text.indexOf('brook_community_bot') != -1){
         if(m.text.indexOf('doc') != -1 || m.text.indexOf('文档') != -1 || m.text.indexOf('文檔') != -1){
             s = "https://txthinking.github.io/brook/";
         }
