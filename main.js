@@ -68,7 +68,7 @@ https://txthinking.github.io/brook/#/?id=cli-and-gui
 https://txthinking.github.io/brook/#/zh-cn/README
 `;
             }
-            if(m.text.indexOf('Background') != -1 || m.text.indexOf('Daemon') != -1) || m.text.indexOf('Boot') != -1){
+            if(m.text.indexOf('Background') != -1 || m.text.indexOf('Daemon') != -1 || m.text.indexOf('Boot') != -1){
                 s = `
 joker can run brook as deamon. boa can add auto start command at boot:
 https://txthinking.github.io/brook/#/install-cli?id=install-via-nbsp-nami-%f0%9f%94%a5
@@ -80,7 +80,7 @@ boa demo:
 https://txthinking.github.io/brook/#/brook-server?id=auto-start-at-boot-via-boa
 `;
             }
-            if(m.text.indexOf('后台运行') != -1 || m.text.indexOf('後台運行') != -1 || m.text.indexOf('守护进程') != -1) || m.text.indexOf('守護進程') != -1 || m.text.indexOf('開機啟動') != -1 || m.text.indexOf('开机启动') != -1){
+            if(m.text.indexOf('后台运行') != -1 || m.text.indexOf('後台運行') != -1 || m.text.indexOf('守护进程') != -1 || m.text.indexOf('守護進程') != -1 || m.text.indexOf('開機啟動') != -1 || m.text.indexOf('开机启动') != -1){
                 s = `
 joker 可以让brook以守护进程运行, boa 可以添加开机启动命令:
 https://txthinking.github.io/brook/#/zh-cn/install-cli?id=%e4%bd%bf%e7%94%a8nami%e5%ae%89%e8%a3%85brook%f0%9f%94%a5
