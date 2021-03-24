@@ -58,7 +58,7 @@ https://txthinking.github.io/brook/#/install-gui-client
                 s = "https://brook-community.github.io/script/";
             }
             if(m.text.indexOf('Youtube') != -1 || m.text.indexOf('視頻') != -1 || m.text.indexOf('视频') != -1){
-                s = "https://brook-community.github.io/script/";
+                s = "https://www.youtube.com/channel/UC5j8-I5Y4lWo4KTa4_0Kx5A";
             }
             if(m.text.indexOf('Community') != -1 || m.text.indexOf('論壇') != -1 || m.text.indexOf('论坛') != -1){
                 s = "https://github.com/txthinking/brook/discussions";
