@@ -24,18 +24,28 @@ https://txthinking.github.io/brook/
             return;
         }
         if(s == '' && m.text.indexOf('brook_community_bot') != -1){
-            if(m.text.indexOf('Welcome') != -1 || m.text.indexOf('歡迎') != -1 || m.text.indexOf('欢迎') != -1){
+            if(m.text.indexOf('安裝') != -1 || m.text.indexOf('安装') != -1){
                 s = `
-Brook is a free and open source software based on the GPLv3 license
-Brook是一個基於GPLv3協議的免費開源軟件.
+CLI 和 GUI
+https://txthinking.github.io/brook/#/zh-cn/?id=%e4%bb%80%e4%b9%88%e6%98%afcli%e5%92%8cgui
 
-Github:
-https://github.com/txthinking/brook
+建議用nami安裝CLI
+https://txthinking.github.io/brook/#/zh-cn/install-cli?id=%e4%bd%bf%e7%94%a8nami%e5%ae%89%e8%a3%85brook%f0%9f%94%a5
 
-Document(官方文檔):
-https://txthinking.github.io/brook/
+安裝GUI
+https://txthinking.github.io/brook/#/zh-cn/install-gui-client
+`;
+            }
+            if(m.text.indexOf('Install') != -1){
+                s = `
+CLI & GUI
+https://txthinking.github.io/brook/#/?id=cli-and-gui
 
-保持 友好 禮貌 風度 互相幫助
+Install CLI via nami
+https://txthinking.github.io/brook/#/install-cli?id=install-via-nbsp-nami-%f0%9f%94%a5
+
+Install GUI
+https://txthinking.github.io/brook/#/install-gui-client
 `;
             }
             if(m.text.indexOf('Document') != -1 || m.text.indexOf('文档') != -1 || m.text.indexOf('文檔') != -1){
@@ -91,6 +101,9 @@ https://txthinking.github.io/brook/#/zh-cn/brook-server?id=%e4%bd%bf%e7%94%a8jok
 boa 例子:
 https://txthinking.github.io/brook/#/zh-cn/brook-server?id=%e4%bd%bf%e7%94%a8boa%e5%bc%80%e6%9c%ba%e8%87%aa%e5%8a%a8%e5%90%af%e5%8a%a8%e5%91%bd%e4%bb%a4
 `;
+            }
+            if(m.text.indexOf('IP') != -1 || m.text.indexOf('DNS') != -1){
+                s = "https://ipip.ooo";
             }
             if(m.text.indexOf('Hey') != -1){
                 s = "Hey :)";
