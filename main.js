@@ -108,6 +108,9 @@ https://txthinking.github.io/brook/#/zh-cn/brook-server?id=%e4%bd%bf%e7%94%a8boa
             if(m.text.indexOf('Hey') != -1){
                 s = "Hey :)";
             }
+            if(m.text.indexOf('question') != -1){
+                s = "Can you tell me why 'Hello world' is displayed on my monitor?";
+            }
             if(s == ''){
                 s = "I don't understand, you can help me. 我還不懂, 你可以幫助我. https://github.com/brook-community/wall-e"
             }
